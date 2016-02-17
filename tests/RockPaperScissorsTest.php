@@ -23,19 +23,21 @@
             $this->assertEquals("draw", $result2);
             $this->assertEquals("draw", $result3);
         }
-        // function test_rock_scissors()
-        // {
-        //     //Arrange
-        //     $test_RockPaperScissors = new RockPaperScissors;
-        //     $input1 = "rock";
-        //     $input2 = "scissors";
-        //
-        //     //Act
-        //     $result = $test_RockPaperScissors->playGame($input1, $input2);
-        //
-        //     //Assert
-        //     $this->assertEquals("Player 1", $result);
-        // }
+        function test_rock_paper()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $input1 = "rock";
+            $input2 = "paper";
+
+            //Act
+            $result1 = $test_RockPaperScissors->playGame($input1, $input2);
+            $result2 = $test_RockPaperScissors->playGame($input2, $input1);
+
+            //Assert
+            $this->assertEquals("Player 2", $result1);
+            $this->assertEquals("Player 1", $result2);
+        }
 
     }
 
