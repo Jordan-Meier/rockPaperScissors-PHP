@@ -1,48 +1,63 @@
-# _Template for PHP w/ Silex, Twig, and PHPUnit_
+# Rock, Paper, Scissors Website
 
-#### _A simple template, 2.12.2016_
+## Epicodus PHP, Week 2: BDD Practice
 
-### By _**Joseph Karasek**_
+### By: Jordan Meier
 
-## Description
+### Description
 
-_This web app is designed to collect and display contact information for a number of people (basic address book). Contacts can be created, stored, deleted individually, or deleted as a group. The app was built using the micro-framework Silex, as well as Bootstrap._
+This is a website where a user can input a single word, and a list of other words that may be anagrams. After submitting the form, the user should be told which of the list of words were anagrams.
 
-_The goal of this code review is to show basic understanding and competency with php and the Silex micro-framework, including the ability to create, store, and delete instants of a given class._
 
-_The code review will consider the following criteria.._
-* Does your Contact object have all our ingredients? It should have a constructor, private properties, getters, setters, a save method, a getAll method and a deleteAll method.
-* Were Twig template files used for all pages?
-* Are Contacts being saved into the session and cleared correctly?
-* Is your logic easy to understand?
-* Did you use descriptive variable names?
-* Does your code have proper indentation and spacing?
-* Did you include a README with a description of the program, setup instructions, a copyright, a license, and your name?
-* Is the project tracked in Git, and did you regularly make commits with clear messages that finish the phrase "This commit will…"?
+### Known Bugs
 
-## Setup/Installation Requirements
+No known bugs at this time.
 
-1. _Fork and clone this repository from_ [gitHub](https://github.com/joekarasek/epicodus-php-address_book.git).
-2. Navigate to the root directory of the project in which ever CLI shell you are using and run the command: __composer install__ .
-3. Create a local server in the /web directory within the project folder using the command: __php -S localhost:8000__ (assuming you are using a mac).
-4. Open the directory http://localhost:8000 in any standard web browser.
+### Setup
 
-## Known Bugs
+Clone this repo on to your desktop, make sure that you have Composer installed on your computer and then:
+* navigate into the project folder.
+* In your terminal, run the command:
+```shell
+composer install
+```
+* Once it is finished installing, navigate to the 'web' directory.
+* In the 'web' directory, start the server with this command (if you are using a mac):
+```shell
+php -S localhost:8000
+```
+* Go to your browser and for the URL, type in: localhost:8000
 
-_This application is not fully designed and may have unknown bugs._
 
-_Currently, instants of Contact are assigned a random 6 digit ID. There is a tiny chance that multiple contacts may share an ID, deleting one of those contacts will cause the first (in order of creation) contact with that ID to be deleted._
+### Technologies Used
+* html
+* CSS
+* PHP
+* Silex
+* Twig
+* PHPUnit
+* Bootstrap v3.3.6
 
-## Support and contact details
+###Copyright & Licensing
 
-_If you have any questions, concerns, or feedback, please contact the author through_ [gitHub](https://github.com/joekarasek/epicodus-php-address_book.git).
+Copyright (c) 2015 **Jordan Meier**
 
-## Technologies Used
+*This software is licensed under the MIT license.*
 
-_This web application was created using the_  [Silex micro-framework](http://silex.sensiolabs.org/)_, as well _[Twig](http://twig.sensiolabs.org/), a template engine for php.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-### License
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-MIT License.
-
-Copyright (c) 2016 **_Joseph Karasek_**
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
