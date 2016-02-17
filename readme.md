@@ -6,7 +6,7 @@
 
 ### Description
 
-This is a website where a user can input a single word, and a list of other words that may be anagrams. After submitting the form, the user should be told which of the list of words were anagrams.
+This is a website where a two users can play rock, paper, scissors against one another.
 
 
 ### Known Bugs
